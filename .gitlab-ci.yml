@@ -1,0 +1,22 @@
+stages:
+  - frontendtest
+  - frontendlint
+
+build:
+  stage: frontendtest
+  script:
+    - cd frontend
+    - npm config set registry https://registry.npm.taobao.org
+    - npm install
+    - npm run test:unit
+  tags:
+    - gundb
+
+test:
+  stage: frontendlint
+  script:
+    - cd frontend
+    - npm install
+    - npm run lint
+  tags:
+    - gundb

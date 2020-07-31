@@ -1,0 +1,53 @@
+注册runner
+C:\Users\Administrator>docker run --rm -t -i -v H:\gitlab-runner\config:/etc/gitlab-runner --name my-gitlab-runner gitlab/gitlab-runner register
+Runtime platform                                    arch=amd64 os=linux pid=6 revision=efa30e33 version=13.2.1
+Running in system-mode.
+
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
+https://se.jisuanke.com/
+Please enter the gitlab-ci token for this runner:
+PGkDgCga-YJ7zR2uHgwi
+Please enter the gitlab-ci description for this runner:
+[661f21b939f1]: gundbrunner
+Please enter the gitlab-ci tags for this runner (comma separated):
+only,test
+Registering runner... succeeded                     runner=PGkDgCga
+Please enter the executor: docker+machine, docker-ssh+machine, docker, parallels, shell, virtualbox, custom, docker-ssh, ssh, kubernetes:
+docker
+Please enter the default Docker image (e.g. ruby:2.6):
+alpine:latest
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
+
+C:\Users\Administrator>docker run --rm -t -i -v H:\gitlab-runner\config:/etc/gitlab-runner --name my-gitlab-runner gitlab/gitlab-runner register
+Runtime platform                                    arch=amd64 os=linux pid=6 revision=efa30e33 version=13.2.1
+Running in system-mode.
+
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
+https://se.jisuanke.com/
+Please enter the gitlab-ci token for this runner:
+uT8KB2isNEhS7F4CTW6s
+Please enter the gitlab-ci description for this runner:
+[85ed03f3d3e3]: gundb_prototype runner
+Please enter the gitlab-ci tags for this runner (comma separated):
+backend.test
+Registering runner... succeeded                     runner=uT8KB2is
+Please enter the executor: parallels, virtualbox, docker+machine, docker-ssh+machine, kubernetes, custom, docker, docker-ssh, shell, ssh:
+docker
+Please enter the default Docker image (e.g. ruby:2.6):
+alpine:latest
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
+
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
+https://se.jisuanke.com/
+Please enter the gitlab-ci token for this runner:
+Ay2zsZPZyY1JdbxzziLL
+Please enter the gitlab-ci description for this runner:
+[f1a4d7cc2def]: electron runner
+Please enter the gitlab-ci tags for this runner (comma separated):
+electron,test
+Registering runner... succeeded                     runner=Ay2zsZPZ
+Please enter the executor: docker-ssh, parallels, virtualbox, docker+machine, docker-ssh+machine, docker, shell, ssh, kubernetes, custom:
+docker
+Please enter the default Docker image (e.g. ruby:2.6):
+alpine:latest
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!

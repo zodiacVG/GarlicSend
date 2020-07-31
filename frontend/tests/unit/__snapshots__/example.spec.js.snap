@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PasswordInput renders counter html 1`] = `
+<div>
+  <h2>请输入密码</h2>
+  <el-input placeholder="输入密码" id="passwordInput" size="medium" maxlength="6" show-password=""></el-input>
+  <el-button type="success" icon="el-icon-check" circle=""></el-button>
+</div>
+`;

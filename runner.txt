@@ -1,0 +1,5 @@
+安装Docker映像并启动容器，使用本地系统卷挂载启动Runner容器
+docker run -d --name gitlab-runner --restart always\
+-v /H:\gitlab-runner/etc/gitlab-runner \
+-v /var/run/docker.sock:/var/run/docker.sock\
+gitlab/gitlab-runner:latest
